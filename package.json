@@ -1,0 +1,12 @@
+{
+  "name": "central-demandas",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "build": "npm run build -w web && npm run build -w server",
+    "test": "npm test -w server",
+    "start": "npm start -w server"
+  },
+  "engines": { "node": ">=22" }
+}
